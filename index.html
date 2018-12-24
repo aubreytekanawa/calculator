@@ -1,36 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <title>JS-Calculator</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css" >
 </head>
+
+<!-- HEADER CONTENT-->
 <body>
-    <div class="grid-container">
-        <div class="grid-item" id="display">
-            <div class="display-item" id="equation"><p id="equation-display">0</p></div>
-            <div class="display-item"><p id="outputDisplay">0</p></div>
-        </div>
-        <button class="grid-item function" id="clear">AC</button>
-        <button class="grid-item operator" id="divide" value="/">/</button>
-        <button class="grid-item operator" id="multiply" value="*">x</button>
-        <button class="grid-item number" id="seven" value="7">7 </button>
-        <button class="grid-item number" id="eight" value="8">8</button>
-        <button class="grid-item number" id="nine" value="9">9</button>
-        <button class="grid-item operator" id="subtract" value="-">-</button>
-        <button class="grid-item number" id="four" value="4">4</button>
-        <button class="grid-item number" id="five" value="5">5</button>
-        <button class="grid-item number" id="six" value="6">6</button>
-        <button class="grid-item operator" id="add" value="+">+</button>
-        <button class="grid-item number" id="one" value="1">1</button>
-        <button class="grid-item number" id="two" value="2">2</button>
-        <button class="grid-item number" id="three" value="3">3</button>
-        <button class="grid-item function" id="equals" value="=">=</button>
-        <button class="grid-item number" id="zero" value="0">0</button>
-        <button class="grid-item number" id="decimal" value=".">.</button>
-    </div>
-    <script src="Calculator.js"></script>
-</body>
+  <header>
+    <H1> BASIC JAVASCRIPT CALCULATOR <H1>
+        <nav> 
+          <ul>
+            <li><a href="https://aubreytekanawa.github.io/index.html" target="_blank">Main Page</a></li>
+            <li><a href="https://aubreytekanawa.github.io/blog/Sprint5/index.html" target="_blank">Sprint 5</a></li>
+          </ul>
+        </nav> 
+  </header>
+
+<!--THE CALCULATOR-->
+<div class = "calculator">
+  <H1>CUZIO 90210</H1>       
+    Javascript Calculator
+    <div class="display">
+        <div class="smlDisplay"><p id="equation">0</p></div>
+        <div class="lrgDisplay"><p id="output">0</p></div>
+    </div>  
+
+  <!--BUTTONS -->
+    <!--Top Row -->
+      <div class = "Button_Array">
+        <button type="button" class="wide"      id = "All_Clear" onclick=location.reload() >AC</button>
+        <button type="button" class="ctrl"      id ="Clear_Entry" >CE </button>
+        <button type="button" class="operators" id ="/" value="/" >÷</button>
+        <br>
+      <!--2nd Row -->
+        <button type="button" class="numbers"   id ="7"  >7</button>
+        <button type="button" class="numbers"   id ="8"  >8</button>
+        <button type="button" class="numbers"   id ="9"  >9</button>
+        <button type="button" class="operators" id ="*" >x</button>
+        <br>
+      <!--3nd Row -->
+        <button type="button" class="numbers"   id ="4"  >4</button>
+        <button type="button" class="numbers"   id ="5"  >5</button>
+        <button type="button" class="numbers"   id ="6"  >6</button>
+        <button type="button" class="operators" id ="-" >-</button>
+        <br>
+      <!--4th Row -->
+        <button type="button" class="numbers"   id ="1"  >1</button>
+        <button type="button" class="numbers"   id ="2"  >2</button>
+        <button type="button" class="numbers"   id ="3"  >3</button>
+        <button type="button" class="tall" class="operator"  id ="+"  >+</button>
+        <br>   
+      <!--5th Row -->  
+        <button type="button" class="numbers"    id ="0"  >0</button>
+        <button type="button" class="decimal"   id ="."  >.</button>
+        <button type="button" class="ctrl" id ="total"  >=</button>
+      </div>
+
+      <div>
+        <script src="calculator.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      </div>
+  </div>
+</body> 
+
+<Footer>
+ 
+</Footer>
+
 </html>
