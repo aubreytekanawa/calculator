@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', startCalc);
         }
     //EVENT HANDLING
     //This reacts to button clicks on the page starting with button clicks.
+    // All Clear - button functionality is defined in HTML doc to reload the page.
     $("button").on("click",function(){
-        // All Clear - button functionality is defined in HTML doc to reload the page.
         // Clear last entry button - this is just a backspace that pops off the last input into the equation field. 
         if (this.id ==="Clear_Entry"){
             inputs.pop()
